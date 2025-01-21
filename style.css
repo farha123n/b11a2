@@ -56,14 +56,179 @@ nav{
     margin-top: 20px;
     display:none
 }
+/* main section  */
+
+main section{
+    width:1000px;
+    margin:50px auto;
+}
+.section-header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.description{
+    color:rgba(0,0,0,.8)
+}
+.empowerment{
+    display:flex;
+    align-items: center;
+}
+.btn-secondary{
+    background-color: black;
+    color: white;
+    padding:8px 16px;
+    border-radius: 10px;
+}
+.heading{
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+.curriculum{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-image: url("assets/bg.png");
+    background-position: top right;
+    background-color: white;
+    top: 30px;
+    right: 20px;
+    
+}
+.standard-cards{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    background-color: rgba(255,255,255,.8);
+}
+.kinder{
+    background: linear-gradient(to top,white 60%,skyblue);
+    justify-items: center;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+}
+.element{
+    background: linear-gradient(to top,white 60%,orange 80%);
+    justify-items: center;
+    padding: 45px 30px;
+    border-radius:10px;
+    margin-bottom: 30px;
+}
+.middle{
+    background: linear-gradient(to top,white 60%,purple 80%);
+    justify-items: center;
+    padding: 50px 30px;
+    margin-bottom: 30px;
+}
+.btn-kinder{
+    font-size: 1.7rem;
+    font-weight:400; 
+    border: none;
+
+}
+.kinder-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.kinder,element,.middle{
+    border-radius: 20px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+}
+.arrow-container{
+    display: flex;
+    gap: 24px;
+}
+.left-arrow{
+    background-color: orange;
+    border-radius: 50%;
+    padding: 10px;
+}
+.right-arrow{
+    background-color: orange;
+    border-radius: 50%;
+    padding: 5px;
+}
+.our{
+    background: linear-gradient(white,rgb(254,163,1));
+    padding: 50px;
+}
+.picture{
+    width: 40%;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+.picture-container{
+    display:flex;
+    gap: 70px;
+}
+.picture img{
+    width: 100%;
+}
+.date{
+    
+    color: white;
+    border: none;
+    border-radius: 16px;
+    text-align: center;
+    width: 200px;
+    margin-top: -20px;
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+.four-picture{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.p{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+
+}
+.p img{
+    width:100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
 
 @media screen and (max-width:576px) {
 
     .menu{
         display:flex;
     }
-    .menu-container >ul >li,.school, .contact{
+    .menu-container >ul >li,.school, .contact, .arrow, .picture{
         display:none;
+    }
+    .empowerment{
+        flex-direction: column-reverse;
+        justify-items: center;
+        text-align: center;
+    }
+    .standard-cards{
+        grid-template-columns: .8fr;
+        justify-content: center;
+    }
+    .picture-container{
+        flex-direction: column;
+    }
+    .four-picture{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .p{
+        width: 100%;
+    }
+    .four-picture{
+        width: 100%;
     }
     
 }
