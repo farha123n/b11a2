@@ -68,7 +68,8 @@ main section{
     font-weight: 700;
 }
 .description{
-    color:rgba(0,0,0,.8)
+    color:rgba(0,0,0,.8);
+    margin-bottom: 30px;
 }
 .empowerment{
     display:flex;
@@ -83,6 +84,7 @@ main section{
 .heading{
     font-size: 4rem;
     font-weight: 600;
+    margin-bottom: 30px;
 
 }
 .curriculum{
