@@ -241,7 +241,7 @@ footer{
         grid-template-columns: .8fr;
         justify-content: center;
     }
-    .picture-container, footer, .foot{
+    .picture-container, footer {
         flex-direction: column;
     }
  
